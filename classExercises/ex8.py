@@ -5,9 +5,9 @@ print(formatter.format("one", "two", "three", "four"))
 print(formatter.format(True, False, False, True))
 print(formatter.format(formatter, formatter, formatter, formatter))
 print(formatter.format(
-    "Try your",
-    "Own text here",
-    "Maybe a poem",
-    "Or a song about fear"
+    #first 4 lines of T.S.Eliot's The Waste Land
+    "April is the cruellest month, breeding",
+    "Lilacs out of the dead land, mixing",
+    "Memory and desire, stirring",
+    "Dull roots with spring rain."
 ))
-
