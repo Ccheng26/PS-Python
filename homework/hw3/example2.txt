@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20170914164353
+Username: DESKTOP-B8D4HP7\Connie
+RunAs User: DESKTOP-B8D4HP7\Connie
+Machine: DESKTOP-B8D4HP7 (Microsoft Windows NT 10.0.15063.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 11752
+PSVersion: 5.1.15063.502
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.15063.502
+BuildVersion: 10.0.15063.502
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Connie\Desktop\PythonClass\assignments\homework\example2.txt
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> type .\example.txt
+Examples in Windows
+a. cat      type: print the whole file
+b. less     more: page through a file
+c. grep     select-string: find things inside file
+d. Find     dir -r: find files
+e. Touch    New-Item itemname.ext -type file
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> more .\example.txt
+Examples in Windows
+a. cat      type: print the whole file
+b. less     more: page through a file
+c. grep     select-string: find things inside file
+d. Find     dir -r: find files
+e. Touch    New-Item itemname.ext -type file
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> select-string file .\example.txt
+
+example.txt:2:a. cat      type: print the whole file
+example.txt:3:b. less     more: page through a file
+example.txt:4:c. grep     select-string: find things inside file
+example.txt:5:d. Find     dir -r: find files
+example.txt:6:e. Touch    New-Item itemname.ext -type file
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> dir -r "ex14.py"
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        9/14/2017  12:36 AM           1951 ex14.py
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> New-Item example3.txt -type file
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        9/14/2017   4:44 PM              0 example3.txt
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20170914164518
+**********************

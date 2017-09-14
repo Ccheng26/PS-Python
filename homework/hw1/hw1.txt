@@ -1,0 +1,158 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20170914170807
+Username: DESKTOP-B8D4HP7\Connie
+RunAs User: DESKTOP-B8D4HP7\Connie
+Machine: DESKTOP-B8D4HP7 (Microsoft Windows NT 10.0.15063.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14656
+PSVersion: 5.1.15063.502
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.15063.502
+BuildVersion: 10.0.15063.502
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\hw1.txt
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> pwd
+
+Path
+----
+C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> mkdir folder
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/14/2017   5:08 PM                folder
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> cd folder
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\folder> cd ..
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> ls
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/14/2017   5:08 PM                folder
+-a----         9/7/2017   6:24 PM         133692 HW  1.pdf
+-a----        9/14/2017   5:08 PM           1188 hw1.txt
+-a----        9/14/2017   5:07 PM           3220 README.md
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> rmdir .\folder\
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> ls
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         9/7/2017   6:24 PM         133692 HW  1.pdf
+-a----        9/14/2017   5:08 PM           1928 hw1.txt
+-a----        9/14/2017   5:07 PM           3220 README.md
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> cp hw1.txt
+cp : Cannot overwrite the item C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\hw1.txt with itself.
+At line:1 char:1
++ cp hw1.txt
++ ~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Connie...ork\hw1\hw1.txt:String) [Copy-Item], IOException
+    + FullyQualifiedErrorId : CopyError,Microsoft.PowerShell.Commands.CopyItemCommand
+cp : Cannot overwrite the item C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\hw1.txt with itself.
+At line:1 char:1
++ cp hw1.txt
++ ~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Connie...ork\hw1\hw1.txt:String) [Copy-Item], IOException
+    + FullyQualifiedErrorId : CopyError,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> touch ex1.txt
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> cp .\ex1.txt
+cp : Cannot overwrite the item C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\ex1.txt with itself.
+At line:1 char:1
++ cp .\ex1.txt
++ ~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Connie...ork\hw1\ex1.txt:String) [Copy-Item], IOException
+    + FullyQualifiedErrorId : CopyError,Microsoft.PowerShell.Commands.CopyItemCommand
+cp : Cannot overwrite the item C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1\ex1.txt with itself.
+At line:1 char:1
++ cp .\ex1.txt
++ ~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\Connie...ork\hw1\ex1.txt:String) [Copy-Item], IOException
+    + FullyQualifiedErrorId : CopyError,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> cp .\ex1.txt ex2.txt
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> ls
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        9/14/2017   5:10 PM              2 ex1.txt
+-a----        9/14/2017   5:10 PM              2 ex2.txt
+-a----         9/7/2017   6:24 PM         133692 HW  1.pdf
+-a----        9/14/2017   5:10 PM           4141 hw1.txt
+-a----        9/14/2017   5:07 PM           3220 README.md
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> ls
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        9/14/2017   5:10 PM              2 ex1.txt
+-a----        9/14/2017   5:10 PM              2 ex2.txt
+-a----         9/7/2017   6:24 PM         133692 HW  1.pdf
+-a----        9/14/2017   5:10 PM           4703 hw1.txt
+-a----        9/14/2017   5:07 PM           3220 README.md
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> mkdir blank
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/14/2017   5:10 PM                blank
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> mv .\ex1.txt .\blank\
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> ls
+
+
+    Directory: C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/14/2017   5:11 PM                blank
+-a----        9/14/2017   5:10 PM              2 ex2.txt
+-a----         9/7/2017   6:24 PM         133692 HW  1.pdf
+-a----        9/14/2017   5:10 PM           5598 hw1.txt
+-a----        9/14/2017   5:07 PM           3220 README.md
+
+
+PS C:\Users\Connie\Desktop\PythonClass\assignments\homework\hw1> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20170914171124
+**********************
