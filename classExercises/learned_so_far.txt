@@ -1,0 +1,14 @@
+topics
+input/prompt
+storing things in variables
+string/string manipulation, formatting
+file modes (create, read, write, append)
+data types: strings, numbers, floats, booleans
+arithmetic operators
+logical operators
+if/elsif/else statements
+defining/calling functions
+comments
+errors and types of errors
+escape sequences
+reading/writing files

@@ -19,41 +19,6 @@ cheese_and_crackers(4+3, 5-1)
 #do math with variables in function arg
 cheese_and_crackers(cheese_count+4, boxes_of_crackers+3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''Actual book code
 
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
