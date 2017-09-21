@@ -25,9 +25,9 @@ def find_prime (num):
 			if (num% x ==0):
 				count=count+1
 	if count==1:
-		print("Is prime")
+		print(f"{num} Is prime")
 	else:
-		print("Is not prime")
+		print(f"{num} Is not prime")
 
 find_prime(37)
 find_prime(22)
@@ -42,27 +42,29 @@ find_prime(22)
  			Press 2 to convert from megabyte to byte...
 '''
 
-message="""Lets do a conversion: Select your conversion
-	To convert from kilobytes to bytes, type 1 and hit enter
-	To convert from mega byte to bytes, type 2 and hit enter
-	To convert from terabyte to bytes, type 3 and hit enter
-	To convert from terabyte to megabyte, type 4 and hit enter
-"""
+
 def conversion(option, num):
 	if(option == 1):
-		num = num* 1000
-		return num
+		return num* 1000
 	elif(option==2 or option==4):
 		return num* 1000000
 	elif(option==3):
 		return num*1000000000000
 	else:
 		return "Sorry invalid input"
-print(message)
-option=input()
-print("What number would you like to convert?", end=' ')
-num = input()
-print(num)
-converted_num = conversion(option, num)
-print(converted_num)
-print(f"You selected {option}, the result is {converted_num}")
+
+def prompt():
+	message="""Lets do a conversion: Select your conversion
+	To convert from kilobytes to bytes, type 1 and hit enter
+	To convert from mega byte to bytes, type 2 and hit enter
+	To convert from terabyte to bytes, type 3 and hit enter
+	To convert from terabyte to megabyte, type 4 and hit enter
+	"""
+	print(message)
+	option=input()
+	print("What number would you like to convert?", end=' ')
+	num = input()
+	con=conversion(int(option), int(num))
+	print(f"You selected {option}, the result {con}")
+
+prompt()
