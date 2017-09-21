@@ -29,8 +29,6 @@ def find_prime (num):
 	else:
 		print(f"{num} Is not prime")
 
-find_prime(37)
-find_prime(22)
 '''
 6. Write a program that does a conversion for the user. Your program should give user the following option to select from. Once the user selects the option and enters the input, your program should do the conversion accordingly.
  a. Convert from kilobytes to bytes = 1=> 1 000
@@ -54,6 +52,8 @@ def conversion(option, num):
 		return "Sorry invalid input"
 
 def prompt():
+	prime_in = input("Enter a number to check if its prime ")
+	find_prime(int(prime_in))
 	message="""Lets do a conversion: Select your conversion
 	To convert from kilobytes to bytes, type 1 and hit enter
 	To convert from mega byte to bytes, type 2 and hit enter
