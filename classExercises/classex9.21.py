@@ -66,7 +66,6 @@ for i in range(len(numbers)):
 
 #create a list that contains multiples of 2 from 12 to 48, including 48
 mult_of_two=[]
-for i in range(12,49):
-	if(i%2==0):
-			mult_of_two.append(i)
+for i in range(12,49,2):
+		mult_of_two.append(i)
 print(mult_of_two)
