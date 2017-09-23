@@ -49,14 +49,14 @@ print(f"The area of a circle with a radius of 9 is {area_of_circle(9)}")
 def has_x(string_val):
     # convert string to upper case
     up= string_val.upper()
+    # create a flag to store the boolean, false as a base condition
+    flag=False
     # iterate through the string
     for x in up:
         # check if a character is x, if so return true, else, return false
         if(x=='X'):
             return True
-        else:
-            return False
-
+    return flag
 x_prompt=input("Enter a string, lets check if there's an x involved...")
 print(f"Does {x_prompt} have an x in it? {has_x(x_prompt)}")
 
@@ -69,17 +69,17 @@ def has_vowels(str):
     # so first we're iterating through the string, and getting the individual characters
     # then we're checking if any character in the string has a vowel with char in the set defining the vowels
     # if there are vowels return true, since we are only checking for the presence of one char as a vowel
-    if any(char in lo for char in ("a", "e", "i", "o", "u")):
+    if any(char in lo for char in ('a', 'e', 'i', 'o', 'u')):
         return True
     else:
         return False
 # create a prompt that asks the user for a string
 prompt= input("Put in a phrase, check if it's got vowels ")
-print(f"The phrase '{prompt}', does if have vowels? {has_vowels(prompt)}")
+print(f"The phrase '{prompt}', does it have vowels? {has_vowels(prompt)}")
 
 # 6. What is the volume of a sphere with radius 5? The volume of a sphere with radius r is (4/3)πr3 
 def vol_sphere(radius):
-    # implement formula after importing math library, return value
+    # implement formula after importing math library(line 24), return value
     return (4/3)*math.pi*(math.pow(radius,3))
 print(f"The volume of a sphere with a radius of 5 is {vol_sphere(5)}")
 
@@ -89,7 +89,7 @@ def div_by_three(num):
         return True
     else:
         return False
-in_num= input("Enter a number to check if it's divisible by 3")
+in_num= input("Enter a number to check if it's divisible by 3 ")
 print(f"Is {in_num} is divisible by 3? {div_by_three(int(in_num))}")
 
 # 8. Import data/time library and print out today's data and current time
@@ -148,7 +148,7 @@ def triangle_check(num1,num2,num3):
         print("No")
         return
     else:
-        only print "Yes" if none of the above are true
+        # only print "Yes" if none of the above are true
         print("Yes")
 
 num1=input("Enter the side and press enter ")
