@@ -1,4 +1,3 @@
-'''
 # 1.How many seconds are there in 42 minutes 42 seconds
 # create a function to take in minutes and seconds
 def min_to_sec(min, sec):
@@ -113,28 +112,24 @@ def repeat_a(string):
     return counter
 aWord = input("Enter in a word, see how many times a is repeated ")
 print(f"The letter 'a' is repeated {repeat_a(aWord)} times.")
-'''
+
 # write code that counts the number of letters in a word provided by the user
 def word_count(sentence):
-    word_store= sentence.split(" " or "." or "?" or "!" or ",")
-    
-    for ind in word_store:
-        if(ind=="." or "?" or "!" or "," or ""):
-            word_store.index(ind)
-            word_store.pop(word_store.index(ind))
-    print(word_store)
+    word_store= sentence.split()
+    # for ind in word_store:
+    #     if(ind !="." or "?" or "!" or "," or "," or ""):
+    #         word_store.split()
     return len(word_store)
 sent = input("Enter a sentence, we'll see how many words are in here \n")
 print(f"The sentence {sent} has {word_count(sent)} words in it")
 
-#'''
 '''Background Info:
 If you are given three sticks, you may or may not be able to arrange them in a triangle. For example, if one of the sticks is 12 inches long and the other two are one inch long, you will not be able to get the short sticks to meet in the middle. For any three lengths, there is a simple test to see if it is possible to form a triangle: 
 If any of the three lengths is greater than the sum of the other two, 
 then you cannot form a triangle. Otherwise, you can. (If the sum of two lengths equals the third, they form what is called a "degenerate" triangle.) 
 Write a function named triangle_check that takes three integers as arguments, and that prints either "Yes" or "No", depending on whether you can or cannot form a triangle from sticks with the given lengths. 
  Write a function that prompts the user to input three stick lengths, converts them to integers, and uses triangle_check to check whether sticks with the given lengths can form a triangle.
-
+'''
 # create a function that takes three arguments
 def triangle_check(num1,num2,num3):
     # convert the sides to numbers
@@ -162,7 +157,7 @@ num3=input("Enter the last side ")
 triangle_check(num1,num2,num3)
 
 # other version cause we were super ambitious!
-def triangle_check():
+def triangle_check_again():
     # get the string input
     num_string = input("Enter 3 numbers separated by a space ")
     # make an empty list
@@ -183,5 +178,4 @@ def triangle_check():
         return
     else:
         print("Yes")
-triangle_check()
-'''
+triangle_check_again()
