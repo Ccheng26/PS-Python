@@ -92,15 +92,16 @@ def div_by_three(num):
 in_num= input("Enter a number to check if it's divisible by 3 ")
 print(f"Is {in_num} is divisible by 3? {div_by_three(int(in_num))}")
 
-# 8. Import data/time library and print out today's data and current time
+# 8. Import data/time library and print out today's date and current time
 import time
 import datetime
 # print out time now
-print(f"Current date and time is {datetime.datetime.now()}")
+current_time = datetime.datetime.now()
+print(f"Current date and time is {current_time}")
 
 # 9. using the data time library, print out the current year
 # strftime format, does a string format, putting the day of the year as a decimal number
-print(f"Current year is {datetime.date.today().strftime('%j')}")
+print(f"Current year is {current_time.year}")
 
 # 10. write a function that counts how  many times the letter a is repeated in a given word (get the work from the user as an input)
 def repeat_a(string):
