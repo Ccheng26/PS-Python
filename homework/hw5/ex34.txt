@@ -1,0 +1,60 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20170928162355
+Username: DESKTOP-B8D4HP7\Connie
+RunAs User: DESKTOP-B8D4HP7\Connie
+Machine: DESKTOP-B8D4HP7 (Microsoft Windows NT 10.0.15063.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4136
+PSVersion: 5.1.15063.608
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.15063.608
+BuildVersion: 10.0.15063.608
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Connie\Desktop\PythonClass\assignments\classExercises\ex34.txt
+PS C:\Users\Connie\Desktop\PythonClass\assignments> python
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> animals=['bear', 'python3.6', 'peacock', 'kangaroo', 'whale', 'platypus']
+>>> #1. The animal at 1.
+... #The animal at 1 is the 2nd animal and is python3.6.
+... animals[1]
+'python3.6'
+>>> #2. The third (3rd) animal.
+... #The third animal is at index 2 and is a peacock.
+... animals[2]
+'peacock'
+>>> #3. The first (1st) animal.
+... #The first animal is at index 0 and is a bear.
+... animals[0]
+'bear'
+>>> #4. The animal at 3.
+... #The animal at 3 is the 4th animal and is a kangaroo.
+... animals[3]
+'kangaroo'
+>>> #5. The fifth (5th) animal.
+... #The fifth animal is at index 4 and is a whale.
+... animals[4]
+'whale'
+>>> #6. The animal at 2.
+... #The animal at 2 is the 3rd animal and is a peacock.
+... animals[2]
+'peacock'
+>>> #7. The sixth (6th) animal.
+... #The sixth animal is at index 5 and is a platypus.
+... animals[5]
+'platypus'
+>>> #8. The animal at 4.
+... #The animal at 4 is the 5th animal and is a whale.
+... animals[4]
+'whale'
+>>> quit()
+PS C:\Users\Connie\Desktop\PythonClass\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20170928163823
+**********************
