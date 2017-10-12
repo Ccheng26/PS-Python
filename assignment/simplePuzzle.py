@@ -16,6 +16,7 @@ def choose_character():
         print("You will live the legend of the majestic mage, Merlin.")
     else:
         print("Not an option bucko, pick one of the above!")
+        choose_character()
     background()
 
 # displays background text and calls choices function
