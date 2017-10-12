@@ -1,4 +1,5 @@
 # Kumar Goodwin-Kennedy and Connie Cheng
+# When sci-fi and ancient warriors collide you get an epic adventure. Enter the future as a skilled warrior of your choosing. You'll find yourself abord a mysterious alien ship. Can you find your way back home or fall to the creatures only thought of as myth.
 
 # importing random number generator from random
 from random import randint
