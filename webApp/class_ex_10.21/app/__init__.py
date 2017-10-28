@@ -1,18 +1,23 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
-@app.route('/index')
+@app.route('/', methods =['POST', 'GET'])
 def index():
-    information = "info"
-    return render_template('index.html', information= informmation)
+    name = 'user'
+    print(request.method)
+    if request.method == 'POST':
+        name= request.form['name']
+        greet = request.form['greet']
+        greetings = name + greet
+    return render_template('index.html', greetings= greetings)
 
-@app.route('/page1')
-def page1():
-    return 'Separate page:'
-
-@app.route('/action.php')
-def php():
-    return render_template('index.html')
+@app.route('/info')
+def about():
+    return render_template('info.html')
+    
+@app.route('/contact')
+def contact():
+    return "contact page"
 
 if __name__ == "__main__":
     app.run(debug=True)

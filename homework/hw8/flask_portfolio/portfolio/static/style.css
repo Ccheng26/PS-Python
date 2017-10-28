@@ -1,0 +1,70 @@
+body{
+    
+}
+.pad {
+    padding: 5px;
+  }
+.logos{
+    width: 32px;
+    height: 32px;
+}
+/* information found from Jan Dewniak's Creating Your Own CSS Grid System */
+
+.grid-container{
+    width: 100%; 
+    max-width: 100vw;
+}
+/* clearfix */
+.row:before, .row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* column positioning */
+[class*='col-']{
+    float:left;
+    min-height:1px;
+    width:16.66%;
+    /* gutter */
+    padding:2%;
+}
+/* column widths */
+.col-1{
+    width: 16.66%;
+}
+.col-2{
+    width: 30%;
+}
+.col-3{
+    width: 50%;
+}
+.col-4{
+    width: 66.664%;
+}
+.col-5{
+    width: 83.33%;
+}
+.col-6{
+    width: 100%;
+}
+
+/* adding responsiveness */
+/* tablets */
+@media all and(max-width:800px){
+    .col-1{ width: 33.33%; } 
+    .col-2{ width: 50%; }
+    .col-3{ width: 83.33%; }
+    .col-4{ width: 100% }
+    .col-5{ width: 100% }
+    .col-6{ width: 100% }
+}
+/* phones */
+@media all and(max-width:650){
+    .col-1{ width: 50%; } 
+    .col-2{ width: 100%; }
+    .col-3{ width: 100%; }
+    .col-4{ width: 100% }
+    .col-5{ width: 100% }
+    .col-6{ width: 100% }
+}
