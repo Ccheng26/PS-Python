@@ -3,18 +3,23 @@
 {% block content %}
     <h1>Here's a comment page, have fun!</h1>
     <br>
-    {% for i in messages%}
+    
+    
     <table>
+        {% for i in messages%}
         <tr>
             <td> {{i.name}} says: {{i.message}} </td>
         </tr>
+        {% endfor %}
     </table>
-    {% endfor %}
-    <img src="https://c1.staticflickr.com/3/2683/4103190721_bc767d12c6_b.jpg" id="pumpkin">
+    
+    
     <br>
     <h3>Post a comment here using the form</h3>
     <br>
-    <form action="/commentchannel" method="POST">
+    <div class="grid-container">
+    <form action="/commentchannel" method="POST" class="col-3">
+        <br><br>
         <table>
             <th>
                 <tr>
@@ -41,4 +46,7 @@
             </th>
         </table>
     </form>
+
+    <img src="https://c1.staticflickr.com/3/2683/4103190721_bc767d12c6_b.jpg" id="pumpkin" class="col-3">
+</div>
 {% endblock %}
