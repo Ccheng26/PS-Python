@@ -1,16 +1,21 @@
 html{
     background-color: #F2F1ED;
     color: #535657;
+    font-family: 'Roboto Condensed', sans-serif;
+    
 }
 body{
     padding: 5%;
-    
+    font-family: 'Roboto Condensed', sans-serif;
 }
 nav{
     text-align: right;
     width:100%;
 }
 .pad {
+  
+        font-family: 'Roboto Condensed', sans-seri
+        ;
     padding: 5px;
   }
 .logos{
@@ -96,9 +101,21 @@ nav{
 }
 
 /* default headers */
-h1 {font-size: 2em; }
-h2 {font-size: 1.5em; }
-h3 {font-size: 1.17em; }
-h4 {font-size: 1.12em; }
-h5 {font-size: .83em; }
-h6 {font-size: .75em; }
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1.12em;
+}
+h5 {
+    font-size: .83em;
+}
+h6 {
+    font-size: .75em;
+}
