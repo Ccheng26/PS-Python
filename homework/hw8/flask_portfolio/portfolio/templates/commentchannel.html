@@ -21,12 +21,46 @@
             </tr>
         </table>
         {% endfor %}
-
+        <img src="https://c1.staticflickr.com/3/2683/4103190721_bc767d12c6_b.jpg" id="pumpkin">
+        <br>
         <h3>Post a comment here using the form</h3>
+        <br>
         <form action="/commentchannel" method="POST">
-            <input type="text" name="name" placeholder="Name"><br>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-            <button>Submit</button>
+            <table>
+            <th>
+                <tr>
+
+                
+                <td>
+                    Name
+                </td>
+                <td>
+                    <input type="text" name="name" placeholder="Name">
+                </td>
+            </tr>
+            </th>
+            <th>
+                <tr>
+                <td>
+                    Comment
+                </td>
+                <td>
+                    <input name="message" type= "text" placeholder="Comment">
+                </td>
+            </tr>
+            </th>
+            <th>
+                    <button>Submit</button>
+            </th>
+            
+            </table>
         </form>
+        <div id="footer">
+            <!-- All logos are taken from logo packages downloaded from each social meda site and are within usage rights; list of logos: Twitter, GitHub, Linked In.
+   a href links the logo images to which ever hyperlink I've sourced, while the target opens a new tab instead of redirecting the same page-->
+           <div class="logo" id="tw"><a class="pad" href="https://twitter.com/ccheng52/" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/Twitter_Social_Icon_Circle_Color.png') }}"></a> </div>
+           <div class="logo" id="git"><a class="pad" href="https://github.com/Ccheng26" target="_blank"><img class="logos" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a> </div>
+           <div class="logo" id="link"><a class="pad" href="https://www.linkedin.com/in/ccheng52" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/In-2C-34px-R.png') }}"></a></div>
+       </div>
     </body>
 </html>

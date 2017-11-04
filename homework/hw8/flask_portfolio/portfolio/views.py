@@ -4,16 +4,19 @@ from flask import render_template, request, url_for
 # INDEX ROUTE AND FUNCTION(FOR PAGE)
 
 comments=[{'name':'p1', 'message':'Happy Halloween!'},
-          {'name':'p2', 'message':"It's not halloween yet..."}]
+          {'name':'p2', 'message':"Halloween is over..."}]
 # comments=['test1', 'test2']
 
 @app.route('/')
 def index():
     return render_template('/index.html')
 
-@app.route('/about')
+@app.route('/about', methods=['GET','POST'])
 def about():
-    return render_template('/about.html')
+    if request.method =='POST':
+        return render_template('/confirm.html')
+    if request.method =='GET':
+        return render_template('/about.html')
 
 @app.route('/commentchannel', methods=['GET','POST'])
 def commentchannel():

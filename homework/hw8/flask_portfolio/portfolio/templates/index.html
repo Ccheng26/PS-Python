@@ -15,14 +15,28 @@
         <a href="/commentchannel">Comment</a>
     </nav>
     <h1>Greetings!</h1>
+    <br>
     <p>This site is an experimentation on trying to work with more barebones CSS and Flask</p>
 
+    <br>
     <h2>Here's my actual portfolio site, where you can find more of what I've worked on</h2>
-    <a href="http://conniecheng.me">Porfolio</a>
-    <div class="grid-container">
+    <br>
+    <a href="http://conniecheng.me">Behold in Wonder!</a>
+    
+    <!-- <div class="grid-container">
     </div>
-    <p>Here's a picture of a dog in the mean time, this page is still under construction</p>
-    <img src="https://cdn.pixabay.com/photo/2015/03/26/10/36/dog-691641_960_720.jpg" />
+     -->
+    <br><br>
+    <p>In the mean time, here's a picture of a dog, while this page is still under construction</p>
+    <br>
+    <img id= "dog" src="https://static.pexels.com/photos/128817/pexels-photo-128817.jpeg" />
     <!-- <img class="logos" src="{{ url_for('static', filename='img/Twitter_Social_Icon_Circle_Color.png') }}"></a> -->
+    <div id="footer">
+        <!-- All logos are taken from logo packages downloaded from each social meda site and are within usage rights; list of logos: Twitter, GitHub, Linked In.
+a href links the logo images to which ever hyperlink I've sourced, while the target opens a new tab instead of redirecting the same page-->
+       <div class="logo" id="tw"><a class="pad" href="https://twitter.com/ccheng52/" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/Twitter_Social_Icon_Circle_Color.png') }}"></a> </div>
+       <div class="logo" id="git"><a class="pad" href="https://github.com/Ccheng26" target="_blank"><img class="logos" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a> </div>
+       <div class="logo" id="link"><a class="pad" href="https://www.linkedin.com/in/ccheng52" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/In-2C-34px-R.png') }}"></a></div>
+   </div>
 </body>
 </html>
