@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- <meta charset="UTF-8"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='reset.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/commentchannel">Comment</a>
-    </nav>
+{% extends "layout.html" %}
+{% block title %}About Me{% endblock %}
+{% block content %}
     <h1>About Me</h1>
     <br>
     <p>Hi, I'm a developer who programs things. I started working with JavaScript in the fall of 2016 and have been enjoying it ever since!</p>
@@ -28,13 +14,4 @@
         <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
         <button>Submit</button>
     </form>
-
-    <div id="footer">
-         <!-- All logos are taken from logo packages downloaded from each social meda site and are within usage rights; list of logos: Twitter, GitHub, Linked In.
-a href links the logo images to which ever hyperlink I've sourced, while the target opens a new tab instead of redirecting the same page-->
-        <div class="logo" id="tw"><a class="pad" href="https://twitter.com/ccheng52/" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/Twitter_Social_Icon_Circle_Color.png') }}"></a> </div>
-        <div class="logo" id="git"><a class="pad" href="https://github.com/Ccheng26" target="_blank"><img class="logos" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a> </div>
-        <div class="logo" id="link"><a class="pad" href="https://www.linkedin.com/in/ccheng52" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/In-2C-34px-R.png') }}"></a></div>
-    </div>
-</body>
-</html>
+{% endblock %}

@@ -1,67 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Comment Page</title>
-        <!-- <meta charset="UTF-8"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='reset.css') }}">
-        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-    </head>
-    <body>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/commentchannel">Comment</a>
-        </nav>
-        <h1>Here's a comment page, have fun!</h1>
-        {% for i in messages%}
+{% extends "layout.html" %}
+{% block title %}Comment Page{% endblock %}
+{% block content %}
+    <h1>Here's a comment page, have fun!</h1>
+    <br>
+    {% for i in messages%}
+    <table>
+        <tr>
+            <td> {{i.name}} says: {{i.message}} </td>
+        </tr>
+    </table>
+    {% endfor %}
+    <img src="https://c1.staticflickr.com/3/2683/4103190721_bc767d12c6_b.jpg" id="pumpkin">
+    <br>
+    <h3>Post a comment here using the form</h3>
+    <br>
+    <form action="/commentchannel" method="POST">
         <table>
-            <tr>
-                <td> {{i.name}} says: {{i.message}} </td>
-            </tr>
+            <th>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="name" placeholder="Name">
+                    </td>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                    <td>
+                        Comment
+                    </td>
+                    <td>
+                        <input name="message" type= "text" placeholder="Comment">
+                    </td>
+                </tr>
+            </th>
+            <th>
+                <button>Submit</button>
+            </th>
         </table>
-        {% endfor %}
-        <img src="https://c1.staticflickr.com/3/2683/4103190721_bc767d12c6_b.jpg" id="pumpkin">
-        <br>
-        <h3>Post a comment here using the form</h3>
-        <br>
-        <form action="/commentchannel" method="POST">
-            <table>
-            <th>
-                <tr>
-
-                
-                <td>
-                    Name
-                </td>
-                <td>
-                    <input type="text" name="name" placeholder="Name">
-                </td>
-            </tr>
-            </th>
-            <th>
-                <tr>
-                <td>
-                    Comment
-                </td>
-                <td>
-                    <input name="message" type= "text" placeholder="Comment">
-                </td>
-            </tr>
-            </th>
-            <th>
-                    <button>Submit</button>
-            </th>
-            
-            </table>
-        </form>
-        <div id="footer">
-            <!-- All logos are taken from logo packages downloaded from each social meda site and are within usage rights; list of logos: Twitter, GitHub, Linked In.
-   a href links the logo images to which ever hyperlink I've sourced, while the target opens a new tab instead of redirecting the same page-->
-           <div class="logo" id="tw"><a class="pad" href="https://twitter.com/ccheng52/" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/Twitter_Social_Icon_Circle_Color.png') }}"></a> </div>
-           <div class="logo" id="git"><a class="pad" href="https://github.com/Ccheng26" target="_blank"><img class="logos" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a> </div>
-           <div class="logo" id="link"><a class="pad" href="https://www.linkedin.com/in/ccheng52" target="_blank"><img class="logos" src="{{ url_for('static', filename='img/In-2C-34px-R.png') }}"></a></div>
-       </div>
-    </body>
-</html>
+    </form>
+{% endblock %}
