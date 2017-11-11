@@ -29,3 +29,23 @@ def commentchannel():
     elif request.method=='GET':
         print(comments)
         return render_template('commentchannel.html', messages= comments)
+
+secret= 3
+store=[]
+@app.route('/cipher', methods=['GET','POST'])
+def cipher():
+    if request.method =='POST':
+        phrase= request.form['phrase']
+        encrypted= list()
+        for char in phrase:
+            encrypted.append(chr(ord(char)+secret))
+        encrypted_string="".join(encrypted)
+        if not store:
+            store.append({'in_phrase':phrase, 'encrypted_p':encrypted_string})
+        else:
+            store[0]={'in_phrase':phrase, 'encrypted_p':encrypted_string}
+        print(store)
+        return render_template('/cipher.html', encrypted= store)
+    if request.method=='GET':
+        store.clear()
+        return render_template('cipher.html', encrypted= store)
